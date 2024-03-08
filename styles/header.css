@@ -15,7 +15,7 @@
     background: var(--azul-degrade);
 }
 
-/* O position:relative nos permite inserir outros atributos como top, left, right e bottom, que são, respectivamente, topo, esquerda, direita e baixo.*/
+
 .cabecalho {
     background-color: var(--branco);
     display: flex;
@@ -37,14 +37,13 @@
     padding: 0.5em;
 }
 
-/*O position:absolute nos permite movimentar o elemento de acordo com outro que veio antes ou que é o "pai", e que esteja em uma position diferente de "estática", que é a padrão.*/
 .lista-menu {
     display: none;
     position: absolute;
     top: 100%;
     width: 60vw;
 }
-/*:checked é uma pseudoclasse que detecta se o input checkbox está preenchido. O combinador CSS ~ vai procurar outro elemento que vem em seguida e que tem a classe que foi inserida depois. Esse é o caso mais próximo de uma condicional com CSS.*/
+
 .container_botao:checked~.lista-menu {
     display: block;
 }
