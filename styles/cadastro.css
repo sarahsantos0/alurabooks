@@ -1,0 +1,65 @@
+.cadastro {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.cadastro_titulo, 
+.cadastro_texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cadastro_titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cadastro_texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.cadastro_email {
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%;
+    color: var(--azul);
+}
+
+.cadastro_email::placeholder {
+    font-family: var(--fonte-principal);
+    padding: 4em;
+    color: var(--azul);
+    background: url('../img/Email.jpg') no-repeat;
+    background-position: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .cadastro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cadastro_descricao {
+        margin-right: 2em;
+        width: 30%;
+    }
+
+    .cadastro_email {
+        width: 30%;
+    }
+
+    .cadastro_titulo {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cadastro {
+        padding: 3em 20vw;
+    }
+}
